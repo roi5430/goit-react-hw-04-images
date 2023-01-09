@@ -22,7 +22,7 @@ export const Modal = ({ onClose, children }) => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, []); // eslint-disable-line
 
   return createPortal(
     <div className={css.Overlay} onClick={handleBackdropClick}>
